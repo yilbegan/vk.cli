@@ -7,6 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.6"
+cleo = "^0.7.6"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^1.20"
@@ -16,6 +17,9 @@ black = "^18.3-alpha.0"
 [tool.black]
 line-length = 79
 target-version = ["py36", "py37"]
+
+[tool.poetry.scripts]
+vkc = "vkc.console:main"
 
 [build-system]
 requires = ["poetry>=0.12"]
